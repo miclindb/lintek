@@ -119,3 +119,11 @@ footer {
   transform: translateY(0);
 }
 
+.project-card img {
+  width: 100%;           /* Bildet fyller bredden på kortet */
+  aspect-ratio: 16 / 9;  /* Setter samme forhold for alle bilder, kan endres til 1/1 hvis ønskelig */
+  object-fit: cover;     /* Beskjærer bildet for å fylle rammen uten å strekke */
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
