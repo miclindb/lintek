@@ -3,17 +3,73 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Lindberg Teknologi</title>
+  <title>Lindberg Teknologi | AI & Maskinlæring</title>
   <style>
-    body { font-family: Arial, sans-serif; text-align: center; padding: 50px; }
-    h1 { color: #2c3e50; }
-    p { max-width: 500px; margin: 0 auto 20px; }
-    a { color: #007acc; text-decoration: none; font-weight: bold; }
+    /* Reset og grunnleggende styling */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
+    a { color: #1d4ed8; text-decoration: none; }
+
+    /* Hero-seksjon */
+    .hero {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
+      color: white;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 600px;
+      margin-bottom: 30px;
+    }
+
+    .hero a.button {
+      display: inline-block;
+      padding: 15px 30px;
+      font-size: 1rem;
+      color: #1d4ed8;
+      background: white;
+      border-radius: 8px;
+      font-weight: bold;
+      transition: transform 0.2s, background 0.2s;
+    }
+
+    .hero a.button:hover {
+      background: #e0e7ff;
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      color: #555;
+    }
   </style>
 </head>
 <body>
-  <h1>Lindberg Teknologi</h1>
-  <p>Vi hjelper bedrifter med rådgivning innen strategi, IT og digitalisering.</p>
-  <p>Ta kontakt på <a href="mailto:michael@lintek.no">michael@lintek.no</a></p>
+
+  <section class="hero">
+    <h1>Lindberg Teknologi</h1>
+    <p>Vi hjelper bedrifter med AI og maskinlæring for å skape smartere løsninger og bedre beslutninger. Fra strategi til implementering, vi gjør teknologi enkelt å forstå og bruke.</p>
+    <a href="mailto:michael@lintek.no" class="button">Ta kontakt</a>
+  </section>
+
+  <footer>
+    &copy; 2025 Lindberg Teknologi | <a href="mailto:michael@lintek.no">michael@lintek.no</a>
+  </footer>
+
 </body>
 </html>
