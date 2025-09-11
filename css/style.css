@@ -1,111 +1,189 @@
-/* Reset og grunnleggende styling */
+/* Reset */
 * { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background: #f5f7fa; color: #333; line-height: 1.6; }
-a { color: #1d4ed8; text-decoration: none; }
+
+body {
+  font-family: 'Inter', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #ffffff;
+  color: #202124;
+  line-height: 1.6;
+}
+
+a { text-decoration: none; color: #1a73e8; }
+a:hover { color: #174ea6; }
 
 /* Navbar */
 .navbar {
   position: sticky;
   top: 0;
-  background: #1d4ed8;
-  color: white;
+  background: #ffffff;
+  border-bottom: 1px solid #e0e0e0;
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 24px;
   padding: 15px 0;
   z-index: 1000;
 }
-.navbar a { color: white; font-weight: bold; }
-.navbar a:hover { text-decoration: underline; }
+.navbar a {
+  font-weight: 500;
+  color: #1a73e8;
+}
+.navbar a:hover {
+  color: #174ea6;
+}
 
-/* Hero-seksjon */
+/* Hero */
 .hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #1d4ed8 0%, #3b82f6 100%);
-  color: white;
+  background: #f8f9fa;
   text-align: center;
-  padding: 0 20px;
+  padding: 100px 20px 80px;
 }
-.hero h1 { font-size: 3rem; margin-bottom: 20px; }
-.hero p { font-size: 1.2rem; max-width: 600px; margin-bottom: 30px; }
-.hero a.button {
+.hero h1 {
+  font-size: 3rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+.hero .tagline {
+  font-size: 1.4rem;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #5f6368;
+}
+.hero .intro {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-size: 1.1rem;
+  color: #5f6368;
+}
+.cta-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button {
   display: inline-block;
-  padding: 15px 30px;
-  font-size: 1rem;
-  color: #1d4ed8;
-  background: white;
-  border-radius: 8px;
-  font-weight: bold;
-  transition: transform 0.2s, background 0.2s;
+  padding: 14px 28px;
+  border-radius: 9999px;
+  font-weight: 500;
+  transition: background 0.2s ease, box-shadow 0.2s ease;
 }
-.hero a.button:hover {
-  background: #e0e7ff;
-  transform: translateY(-2px);
+.button.primary {
+  background: #1a73e8;
+  color: white;
+}
+.button.primary:hover {
+  background: #174ea6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+.button.secondary {
+  border: 2px solid #1a73e8;
+  color: #1a73e8;
+}
+.button.secondary:hover {
+  background: #e8f0fe;
+}
+
+/* Services */
+.services {
+  padding: 80px 20px;
+  text-align: center;
+  background: #ffffff;
+}
+.services h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.service-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+.service-card {
+  background: white;
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.2), 0 4px 8px rgba(60,64,67,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+.service-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(60,64,67,0.3), 0 8px 16px rgba(60,64,67,0.2);
+}
+.service-card h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+.service-card p {
+  font-size: 0.95rem;
+  color: #5f6368;
+}
+
+/* Projects */
+.featured-projects {
+  padding: 80px 20px;
+  text-align: center;
+  background: #f8f9fa;
+}
+.featured-projects h2 {
+  font-size: 2rem;
+  margin-bottom: 40px;
+}
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  max-width: 1100px;
+  margin: 0 auto 30px;
+}
+.project-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 1px 3px rgba(60,64,67,0.2), 0 4px 8px rgba(60,64,67,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+  text-align: left;
+}
+.project-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+.project-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(60,64,67,0.3), 0 8px 16px rgba(60,64,67,0.2);
+}
+.project-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+}
+.project-card p {
+  font-size: 0.95rem;
+  color: #5f6368;
+}
+.centered-cta {
+  margin-top: 20px;
 }
 
 /* Footer */
 footer {
   text-align: center;
-  padding: 20px;
+  padding: 40px 20px;
   font-size: 0.9rem;
-  color: #555;
-  background: #f5f7fa;
+  color: #5f6368;
+  background: #ffffff;
+  border-top: 1px solid #e0e0e0;
 }
-
-/* Portfolio grid */
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-  padding: 40px 20px;
+footer a {
+  color: #1a73e8;
+  margin: 0 8px;
 }
-.project-card {
-  background: white;
-  border-radius: 8px;
-  padding: 15px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-  text-align: center;
-}
-.project-card img {
-  max-width: 100%;
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-.project-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
-}
-
-/* AI page */
-.ai-page {
-  padding: 40px 20px;
-  max-width: 900px;
-  margin: 0 auto;
-  text-align: center;
-}
-.ai-page h2 { font-size: 2.5rem; margin-bottom: 20px; }
-.ai-page p { font-size: 1.1rem; margin-bottom: 30px; }
-
-.ai-sections {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
-}
-.ai-card {
-  background: white;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  transition: transform 0.3s, box-shadow 0.3s;
-}
-.ai-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+footer a:hover {
+  color: #174ea6;
 }
 
 /* Fade-in effekt */
@@ -117,97 +195,5 @@ footer {
 .fade-in.visible {
   opacity: 1;
   transform: translateY(0);
-}
-
-.project-card img {
-  width: 100%;           /* Bildet fyller bredden på kortet */
-  aspect-ratio: 16 / 9;  /* Setter samme forhold for alle bilder, kan endres til 1/1 hvis ønskelig */
-  object-fit: cover;     /* Beskjærer bildet for å fylle rammen uten å strekke */
-  border-radius: 6px;
-  margin-bottom: 15px;
-}
-
-/* Globalt */
-body {
-  font-family: 'Inter', 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #ffffff; /* hvit hovedbakgrunn */
-  color: #202124; /* Googles mørkegrå tekst */
-  line-height: 1.6;
-}
-
-/* Navbar */
-.navbar {
-  position: sticky;
-  top: 0;
-  background: #ffffff;
-  border-bottom: 1px solid #e0e0e0;
-  color: #202124;
-  display: flex;
-  justify-content: center;
-  gap: 24px;
-  padding: 15px 0;
-  z-index: 1000;
-}
-.navbar a {
-  color: #1a73e8; /* Google-blå */
-  font-weight: 500;
-}
-.navbar a:hover {
-  color: #174ea6;
-  text-decoration: none;
-}
-
-/* Hero */
-.hero {
-  background: #f8f9fa; /* lys grå seksjon */
-  color: #202124;
-  padding: 80px 20px;
-}
-.hero h1 {
-  font-size: 2.8rem;
-  font-weight: 600;
-  margin-bottom: 20px;
-}
-.hero p {
-  font-size: 1.2rem;
-  max-width: 600px;
-  margin-bottom: 30px;
-  color: #5f6368;
-}
-.hero a.button {
-  background: #1a73e8;
-  color: white;
-  padding: 14px 28px;
-  border-radius: 9999px; /* pill-form */
-  font-weight: 500;
-  transition: background 0.2s ease;
-}
-.hero a.button:hover {
-  background: #174ea6;
-}
-
-/* Kort (felles for prosjekt + AI-seksjon) */
-.project-card,
-.ai-card {
-  background: white;
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 1px 3px rgba(60,64,67,0.3), 0 4px 8px rgba(60,64,67,0.15);
-  transition: transform 0.2s, box-shadow 0.2s;
-  text-align: left;
-}
-.project-card:hover,
-.ai-card:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 6px rgba(60,64,67,0.3), 0 8px 16px rgba(60,64,67,0.2);
-}
-
-/* Footer */
-footer {
-  background: #f8f9fa;
-  color: #5f6368;
-  padding: 30px;
-  font-size: 0.9rem;
-  border-top: 1px solid #e0e0e0;
 }
 
