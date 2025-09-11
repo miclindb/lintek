@@ -1,45 +1,90 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
+  <!-- ========== Metadata ========== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Lindberg Teknologi | Prosjekter</title>
+
+  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
+  <!-- ========== Navigasjonsmeny ========== -->
   <nav class="navbar">
     <a href="index.html">Hjem</a>
-    <a href="portfolio.html">Prosjekter</a>
+    <a href="portfolio.html" aria-current="page">Prosjekter</a>
     <a href="ai.html">AI</a>
     <a href="mailto:kontakt@lintek.no">Kontakt</a>
   </nav>  
 
-  <section class="portfolio fade-in">
-    <h2>Prosjektportefølje</h2>
-    <div class="projects-grid">
-      <div class="project-card fade-in">
-        <img src="images/prosjekt1.png" alt="Prosjekt 1">
-        <h3>AI-basert prediksjon</h3>
-        <p>Utviklet maskinlæringsmodell for å forutsi etterspørsel i logistikk.</p>
-      </div>
-      <div class="project-card fade-in">
-        <img src="images/prosjekt2.png" alt="Prosjekt 2">
-        <h3>Automatisert analyse</h3>
-        <p>Bygget løsning for automatisk dataanalyse og rapportgenerering.</p>
-      </div>
-      <div class="project-card fade-in">
-        <img src="images/prosjekt3.png" alt="Prosjekt 3">
-        <h3>Chatbot AI</h3>
-        <p>Implementerte en intelligent chatbot for kundesupport.</p>
-      </div>
-    </div>
-  </section>
+  <!-- ========== Hovedinnhold ========== -->
+  <main class="portfolio fade-in">
 
+    <!-- Introduksjon -->
+    <section class="fade-in">
+      <h1>Prosjektportefølje</h1>
+      <p>
+        Her finner du et utvalg av prosjekter vi har gjennomført innen kunstig intelligens,
+        maskinlæring og automatisering. Hvert prosjekt er et eksempel på hvordan teknologi
+        kan brukes til å skape verdi for bedrifter og organisasjoner.
+      </p>
+    </section>
+
+    <!-- Prosjektoversikt -->
+    <section class="projects-grid">
+
+      <!-- Prosjekt 1 -->
+      <article class="project-card fade-in">
+        <img src="images/prosjekt1.png" alt="Visualisering av AI-basert prediksjonsmodell">
+        <h2>AI-basert prediksjon</h2>
+        <p>
+          Vi utviklet en maskinlæringsmodell som forutsier etterspørsel i logistikkbransjen.
+          Løsningen bidrar til bedre planlegging, reduserte kostnader og økt effektivitet.
+        </p>
+      </article>
+
+      <!-- Prosjekt 2 -->
+      <article class="project-card fade-in">
+        <img src="images/prosjekt2.png" alt="Dashboard for automatisert analyse">
+        <h2>Automatisert analyse</h2>
+        <p>
+          Med en skreddersydd løsning for dataanalyse og rapportgenerering, kan virksomheter
+          hente ut innsikt raskere og mer presist, samtidig som man frigjør tid til strategisk arbeid.
+        </p>
+      </article>
+
+      <!-- Prosjekt 3 -->
+      <article class="project-card fade-in">
+        <img src="images/prosjekt3.png" alt="Chatbot som hjelper kunder med support">
+        <h2>Intelligent chatbot</h2>
+        <p>
+          Vi implementerte en AI-drevet chatbot som håndterer kundesupport.
+          Chatboten gir raske svar, øker tilgjengeligheten og reduserer behovet for manuell oppfølging.
+        </p>
+      </article>
+
+    </section>
+
+    <!-- Fremtidige prosjekter -->
+    <section class="fade-in">
+      <h2>Kommende prosjekter</h2>
+      <p>
+        Vi jobber kontinuerlig med nye ideer og samarbeid. Følg med for oppdateringer om kommende
+        prosjekter innen prediktiv analyse, generativ AI og automatisering.
+      </p>
+    </section>
+
+  </main>
+
+  <!-- ========== Footer ========== -->
   <footer class="fade-in">
-    &copy; 2025 Lindberg Teknologi | <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
+    &copy; 2025 Lindberg Teknologi |
+    <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
   </footer>
 
+  <!-- ========== Script ========== -->
   <script src="js/scrollFade.js"></script>
 </body>
 </html>
