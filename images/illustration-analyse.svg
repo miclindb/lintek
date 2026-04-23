@@ -1,0 +1,85 @@
+<svg viewBox="0 0 800 450" xmlns="http://www.w3.org/2000/svg">
+  <rect width="800" height="450" fill="#0f172a"/>
+
+  <!-- Title -->
+  <text x="30" y="40" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="15" font-weight="600">Analysedashboard</text>
+  <text x="30" y="57" fill="#475569" font-family="Inter,system-ui,sans-serif" font-size="11">Automatisert dataanalyse og rapportgenerering</text>
+
+  <!-- KPI cards -->
+  <rect x="30"  y="74" width="225" height="78" rx="8" fill="#1e293b"/>
+  <text x="50"  y="101" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Prosessert data</text>
+  <text x="50"  y="131" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="26" font-weight="700">4.2M</text>
+  <text x="185" y="131" fill="#22c55e" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">↑ 18%</text>
+
+  <rect x="273" y="74" width="225" height="78" rx="8" fill="#1e293b"/>
+  <text x="293" y="101" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Rapporter generert</text>
+  <text x="293" y="131" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="26" font-weight="700">1 248</text>
+  <text x="415" y="131" fill="#22c55e" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">↑ 34%</text>
+
+  <rect x="516" y="74" width="254" height="78" rx="8" fill="#1e293b"/>
+  <text x="536" y="101" fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11">Spart arbeidstid / uke</text>
+  <text x="536" y="131" fill="#38bdf8" font-family="Inter,system-ui,sans-serif" font-size="26" font-weight="700">140 t</text>
+
+  <!-- Bar chart panel -->
+  <rect x="30" y="170" width="490" height="258" rx="8" fill="#1e293b"/>
+  <text x="50" y="196" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Månedlig rapport-volum</text>
+
+  <!-- Chart grid -->
+  <g stroke="#0f172a" stroke-width="1">
+    <line x1="50" y1="215" x2="500" y2="215"/>
+    <line x1="50" y1="248" x2="500" y2="248"/>
+    <line x1="50" y1="281" x2="500" y2="281"/>
+    <line x1="50" y1="314" x2="500" y2="314"/>
+    <line x1="50" y1="347" x2="500" y2="347"/>
+    <line x1="50" y1="400" x2="500" y2="400"/>
+  </g>
+
+  <!-- Bars (bottom=400, max height=185) -->
+  <rect x="58"  y="328" width="54" height="72"  rx="4" fill="#2563eb" opacity="0.7"/>
+  <rect x="128" y="305" width="54" height="95"  rx="4" fill="#2563eb" opacity="0.75"/>
+  <rect x="198" y="318" width="54" height="82"  rx="4" fill="#2563eb" opacity="0.8"/>
+  <rect x="268" y="287" width="54" height="113" rx="4" fill="#2563eb" opacity="0.85"/>
+  <rect x="338" y="270" width="54" height="130" rx="4" fill="#2563eb"/>
+  <rect x="408" y="249" width="54" height="151" rx="4" fill="#38bdf8"/>
+
+  <!-- X labels -->
+  <g fill="#64748b" font-family="Inter,system-ui,sans-serif" font-size="11" text-anchor="middle">
+    <text x="85"  y="417">Jan</text>
+    <text x="155" y="417">Feb</text>
+    <text x="225" y="417">Mar</text>
+    <text x="295" y="417">Apr</text>
+    <text x="365" y="417">Mai</text>
+    <text x="435" y="417">Jun</text>
+  </g>
+
+  <!-- Trend panel -->
+  <rect x="538" y="170" width="232" height="258" rx="8" fill="#1e293b"/>
+  <text x="558" y="196" fill="#94a3b8" font-family="Inter,system-ui,sans-serif" font-size="12" font-weight="600">Datakvalitet</text>
+
+  <g transform="translate(558,216)">
+    <text y="14" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="11">Salgsdata</text>
+    <rect x="0" y="20" width="192" height="6" rx="3" fill="#334155"/>
+    <rect x="0" y="20" width="154" height="6" rx="3" fill="#2563eb"/>
+    <text x="192" y="27" fill="#2563eb" font-family="Inter,system-ui,sans-serif" font-size="10" text-anchor="end" font-weight="600">80%</text>
+
+    <text y="52" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="11">Lagerdata</text>
+    <rect x="0" y="58" width="192" height="6" rx="3" fill="#334155"/>
+    <rect x="0" y="58" width="125" height="6" rx="3" fill="#7c3aed"/>
+    <text x="192" y="65" fill="#7c3aed" font-family="Inter,system-ui,sans-serif" font-size="10" text-anchor="end" font-weight="600">65%</text>
+
+    <text y="90" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="11">Kundedata</text>
+    <rect x="0" y="96" width="192" height="6" rx="3" fill="#334155"/>
+    <rect x="0" y="96" width="163" height="6" rx="3" fill="#38bdf8"/>
+    <text x="192" y="103" fill="#38bdf8" font-family="Inter,system-ui,sans-serif" font-size="10" text-anchor="end" font-weight="600">85%</text>
+
+    <text y="128" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="11">Finansdata</text>
+    <rect x="0" y="134" width="192" height="6" rx="3" fill="#334155"/>
+    <rect x="0" y="134" width="96" height="6" rx="3" fill="#f59e0b"/>
+    <text x="192" y="141" fill="#f59e0b" font-family="Inter,system-ui,sans-serif" font-size="10" text-anchor="end" font-weight="600">50%</text>
+
+    <text y="166" fill="#f1f5f9" font-family="Inter,system-ui,sans-serif" font-size="11">Logistikk</text>
+    <rect x="0" y="172" width="192" height="6" rx="3" fill="#334155"/>
+    <rect x="0" y="172" width="183" height="6" rx="3" fill="#22c55e"/>
+    <text x="192" y="179" fill="#22c55e" font-family="Inter,system-ui,sans-serif" font-size="10" text-anchor="end" font-weight="600">95%</text>
+  </g>
+</svg>
