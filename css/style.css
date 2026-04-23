@@ -351,6 +351,34 @@ footer {
 /* ── Portfolio page ── */
 .portfolio-content { max-width:1100px; margin:0 auto; padding:clamp(40px,6vw,72px) 24px; }
 .portfolio-content .projects-grid { margin:0 0 40px; }
+
+/* ── Content article pages ── */
+.content-page { max-width:800px; margin:0 auto; padding:clamp(40px,6vw,72px) 24px; }
+.content-page h2 { font-size:1.35rem; font-weight:700; color:var(--text); margin:44px 0 12px; letter-spacing:-0.01em; }
+.content-page p { color:var(--muted); margin-bottom:16px; line-height:1.8; }
+.content-page ul { margin:0 0 20px 20px; color:var(--muted); line-height:1.8; }
+.content-page li { margin-bottom:6px; }
+.content-page .intro-lead { font-size:1.05rem; color:var(--text); line-height:1.8; margin-bottom:32px; border-left:3px solid var(--brand); padding-left:18px; }
+
+/* ── Info card grid (inside content pages) ── */
+.info-grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(210px,1fr)); gap:16px; margin:20px 0 32px; }
+.info-card { background:var(--surface); border:1px solid var(--border); border-radius:var(--radius); padding:22px 18px; }
+.info-card .info-icon { font-size:1.5rem; margin-bottom:10px; display:block; }
+.info-card h3 { font-size:0.95rem; font-weight:600; margin-bottom:6px; color:var(--text); }
+.info-card p { font-size:0.875rem; color:var(--muted); line-height:1.6; margin:0; }
+
+/* ── CTA box at end of content pages ── */
+.content-cta { background:var(--navy); border-radius:var(--radius-lg); padding:44px 32px; text-align:center; margin-top:56px; }
+.content-cta h2 { color:#fff; font-size:1.4rem; font-weight:700; margin-bottom:10px; }
+.content-cta p { color:#94a3b8; margin-bottom:24px; max-width:500px; margin-left:auto; margin-right:auto; }
+.content-cta .cta-buttons { margin-top:0; }
+
+/* ── Clickable ai-card ── */
+.ai-card { position:relative; }
+.ai-card .card-link { display:inline-flex; align-items:center; gap:4px; margin-top:14px; font-size:0.875rem; font-weight:600; color:var(--brand); transition:gap var(--transition); position:relative; z-index:1; }
+.ai-card .card-link:hover { gap:8px; }
+.ai-card-overlay { position:absolute; inset:0; border-radius:var(--radius-lg); }
+
 @media (prefers-reduced-motion: reduce) {
   *, .fade-in, .project-card, .service-card, .button { transition: none !important; animation: none !important; }
   html { scroll-behavior: auto; }

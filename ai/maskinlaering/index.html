@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="no">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Hva er maskinlæring? Lær om supervised, unsupervised og reinforcement learning — og hvordan vi bruker det for norske virksomheter.">
+  <meta property="og:title" content="Maskinlæring forklart | Lindberg Teknologi">
+  <meta name="theme-color" content="#0f172a">
+  <title>Maskinlæring | Lindberg Teknologi</title>
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar-inner">
+      <a href="/" class="navbar-brand">Lindberg<span>Teknologi</span></a>
+      <div class="navbar-links">
+        <a href="/">Hjem</a>
+        <a href="/portfolio/">Prosjekter</a>
+        <a href="/ai/" aria-current="page">AI</a>
+        <a href="mailto:kontakt@lintek.no" class="nav-cta">Kontakt</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero-sub fade-in">
+    <span class="eyebrow">Teknologi</span>
+    <h1>Maskinlæring forklart</h1>
+    <p>Forstå hvordan maskiner lærer av data — og hva det betyr i praksis for din bransje.</p>
+  </header>
+
+  <main class="content-page fade-in">
+
+    <p class="intro-lead">
+      Maskinlæring (ML) er kjernen i moderne AI. I stedet for å programmere regler manuelt,
+      gir vi modellen data — og lar den selv finne mønstrene. Resultatet er systemer som
+      forbedrer seg med erfaring.
+    </p>
+
+    <h2>Hva skiller maskinlæring fra vanlig programmering?</h2>
+    <p>
+      I tradisjonell programmering skriver en utvikler eksplisitte regler: <em>"Hvis X, gjør Y."</em>
+      I maskinlæring snur vi dette på hodet: vi gir modellen eksempler på input og ønsket output,
+      og lar den finne reglene selv.
+    </p>
+    <p>
+      Dette gjør maskinlæring spesielt nyttig der reglene er for komplekse til å programmere
+      manuelt — som bildegjenkjenning, språkforståelse og etterspørselsprediksjon.
+    </p>
+
+    <h2>De tre hovedtypene</h2>
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-icon">🏷️</span>
+        <h3>Supervised learning</h3>
+        <p>Modellen trenes på merkede data — hvert eksempel har et kjent svar. Typisk for klassifisering og prediksjon. Eksempel: prisestimering, spam-deteksjon.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">🔍</span>
+        <h3>Unsupervised learning</h3>
+        <p>Modellen finner mønstre i data uten merkede svar. Brukes til clustering og anomalideteksjon. Eksempel: kundesegmentering, svindeloppdagelse.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">🎮</span>
+        <h3>Reinforcement learning</h3>
+        <p>Modellen lærer ved å prøve og feile i et miljø, og belønnes for gode beslutninger. Brukes i robotikk, spill og optimalisering.</p>
+      </div>
+    </div>
+
+    <h2>Vanlige algoritmer og teknikker</h2>
+    <ul>
+      <li><strong>Lineær regresjon</strong> — Forutsier kontinuerlige verdier, f.eks. salgstall eller priser.</li>
+      <li><strong>Random Forest</strong> — Robust metode for klassifisering og regresjon, god på strukturerte data.</li>
+      <li><strong>Gradient Boosting (XGBoost)</strong> — Ofte best på tabelldata, vinner mange Kaggle-konkurranser.</li>
+      <li><strong>Nevrale nettverk</strong> — Kraftige modeller som håndterer bilder, tekst og lyd.</li>
+      <li><strong>Transformere (BERT, GPT)</strong> — Grunnlaget for moderne språkmodeller som ChatGPT.</li>
+      <li><strong>K-means clustering</strong> — Enkel og effektiv metode for å gruppere data.</li>
+    </ul>
+
+    <h2>Slik bruker vi maskinlæring</h2>
+    <p>
+      Hos Lindberg Teknologi starter vi alltid med problemet — ikke teknologien. En typisk prosess ser slik ut:
+    </p>
+    <div class="info-grid">
+      <div class="info-card">
+        <span class="info-icon">1️⃣</span>
+        <h3>Problemdefinisjon</h3>
+        <p>Vi kartlegger hva du ønsker å forutsi eller automatisere, og vurderer om ML er riktig verktøy.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">2️⃣</span>
+        <h3>Datainnsamling</h3>
+        <p>Vi identifiserer tilgjengelige datakilder, renser og beriker dataene — den viktigste fasen.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">3️⃣</span>
+        <h3>Modellering</h3>
+        <p>Vi tester ulike algoritmer, evaluerer ytelse og velger den modellen som gir best resultater for ditt brukstilfelle.</p>
+      </div>
+      <div class="info-card">
+        <span class="info-icon">4️⃣</span>
+        <h3>Produksjon</h3>
+        <p>Modellen pakkes inn i en API eller pipeline, integreres i dine systemer og overvåkes kontinuerlig.</p>
+      </div>
+    </div>
+
+    <h2>Hva krever en god ML-løsning?</h2>
+    <p>
+      Tre faktorer avgjør om en maskinlæringsløsning lykkes:
+    </p>
+    <ul>
+      <li><strong>Data</strong> — Nok, relevant og god nok kvalitet. Søppel inn = søppel ut.</li>
+      <li><strong>Domeneforståelse</strong> — Tekniske modeller uten forretningskontekst treffer sjelden.</li>
+      <li><strong>Infrastruktur</strong> — Modellen må integreres, vedlikeholdes og overvåkes over tid.</li>
+    </ul>
+
+    <div class="content-cta">
+      <h2>Vil du vite hvordan maskinlæring kan hjelpe deg?</h2>
+      <p>Vi gir en uforpliktende vurdering av mulighetsrommet i din virksomhet.</p>
+      <div class="cta-buttons">
+        <a href="mailto:kontakt@lintek.no" class="button primary">Ta kontakt</a>
+        <a href="/ai/eksempler/" class="button secondary">Se eksempler →</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="fade-in">
+    <div class="footer-inner">
+      <div class="footer-brand">Lindberg<span>Teknologi</span></div>
+      <div class="footer-links">
+        <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="/portfolio/">Prosjekter</a>
+        <a href="/ai/">AI</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Lindberg Teknologi. Alle rettigheter forbeholdt.</p>
+    </div>
+  </footer>
+
+  <script src="/js/scrollFade.js"></script>
+</body>
+</html>
