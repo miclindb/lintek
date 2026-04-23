@@ -1,99 +1,112 @@
 <!DOCTYPE html>
 <html lang="no">
 <head>
-  <!-- ========== Metadata ========== -->
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Prosjektportefølje — eksempler på AI-, ML- og automatiseringsprosjekter fra Lindberg Teknologi.">
   <meta property="og:title" content="Lindberg Teknologi | Prosjekter">
   <meta property="og:description" content="Se utvalgte prosjekter innen AI, maskinlæring og automatisering.">
   <meta property="og:image" content="images/prosjekt1.png">
-  <meta name="theme-color" content="#1a73e8">
+  <meta name="theme-color" content="#0f172a">
   <title>Lindberg Teknologi | Prosjekter</title>
-
-  <!-- CSS -->
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- ========== Navigasjonsmeny ========== -->
+  <!-- Navbar -->
   <nav class="navbar">
-    <a href="index.html">Hjem</a>
-    <a href="portfolio.html" aria-current="page">Prosjekter</a>
-    <a href="ai.html">AI</a>
-    <a href="mailto:kontakt@lintek.no">Kontakt</a>
-  </nav>  
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Lindberg<span>Teknologi</span></a>
+      <div class="navbar-links">
+        <a href="index.html">Hjem</a>
+        <a href="portfolio.html" aria-current="page">Prosjekter</a>
+        <a href="ai.html">AI</a>
+        <a href="mailto:kontakt@lintek.no" class="nav-cta">Kontakt</a>
+      </div>
+    </div>
+  </nav>
 
-  <!-- ========== Hovedinnhold ========== -->
+  <!-- Main content -->
   <main class="portfolio fade-in">
 
-    <!-- Introduksjon -->
-    <section class="fade-in">
+    <!-- Header -->
+    <div class="portfolio-header">
+      <span class="eyebrow">Case-studier</span>
       <h1>Prosjektportefølje</h1>
       <p>
         Her finner du et utvalg av prosjekter vi har gjennomført innen kunstig intelligens,
         maskinlæring og automatisering. Hvert prosjekt er et eksempel på hvordan teknologi
         kan brukes til å skape verdi for bedrifter og organisasjoner.
       </p>
-    </section>
+    </div>
 
-    <!-- Prosjektoversikt -->
-    <section class="projects-grid">
+    <!-- Projects -->
+    <div class="projects-grid">
 
-      <!-- Prosjekt 1 -->
       <article class="project-card fade-in">
         <img src="images/prosjekt1.png" alt="Visualisering av AI-basert prediksjonsmodell" loading="lazy" decoding="async" width="1200" height="675">
-        <h2>AI-basert prediksjon</h2>
-        <p>
-          Vi utviklet en maskinlæringsmodell som forutsier etterspørsel i logistikkbransjen.
-          Løsningen bidrar til bedre planlegging, reduserte kostnader og økt effektivitet.
-        </p>
+        <div class="project-card-body">
+          <h2>AI-basert prediksjon</h2>
+          <p>
+            Vi utviklet en maskinlæringsmodell som forutsier etterspørsel i logistikkbransjen.
+            Løsningen bidrar til bedre planlegging, reduserte kostnader og økt effektivitet.
+          </p>
+        </div>
       </article>
 
-      <!-- Prosjekt 2 -->
       <article class="project-card fade-in">
         <img src="images/prosjekt2.png" alt="Dashboard for automatisert analyse" loading="lazy" decoding="async" width="1200" height="675">
-        <h2>Automatisert analyse</h2>
-        <p>
-          Med en skreddersydd løsning for dataanalyse og rapportgenerering, kan virksomheter
-          hente ut innsikt raskere og mer presist, samtidig som man frigjør tid til strategisk arbeid.
-        </p>
+        <div class="project-card-body">
+          <h2>Automatisert analyse</h2>
+          <p>
+            Med en skreddersydd løsning for dataanalyse og rapportgenerering, kan virksomheter
+            hente ut innsikt raskere og mer presist, samtidig som man frigjør tid til strategisk arbeid.
+          </p>
+        </div>
       </article>
 
-      <!-- Prosjekt 3 -->
       <article class="project-card fade-in">
         <img src="images/prosjekt3.png" alt="Chatbot som hjelper kunder med support" loading="lazy" decoding="async" width="1200" height="675">
-        <h2>Intelligent chatbot</h2>
-        <p>
-          Vi implementerte en AI-drevet chatbot som håndterer kundesupport.
-          Chatboten gir raske svar, øker tilgjengeligheten og reduserer behovet for manuell oppfølging.
-        </p>
+        <div class="project-card-body">
+          <h2>Intelligent chatbot</h2>
+          <p>
+            Vi implementerte en AI-drevet chatbot som håndterer kundesupport.
+            Chatboten gir raske svar, øker tilgjengeligheten og reduserer behovet for manuell oppfølging.
+          </p>
+        </div>
       </article>
 
-    </section>
+    </div>
 
-    <!-- Fremtidige prosjekter -->
-    <section class="fade-in">
+    <!-- Coming soon -->
+    <div class="coming-soon fade-in">
       <h2>Kommende prosjekter</h2>
       <p>
         Vi jobber kontinuerlig med nye ideer og samarbeid. Følg med for oppdateringer om kommende
         prosjekter innen prediktiv analyse, generativ AI og automatisering.
       </p>
-    </section>
+    </div>
 
   </main>
 
-  <!-- ========== Footer ========== -->
+  <!-- Footer -->
   <footer class="fade-in">
-    &copy; 2025 Lindberg Teknologi |
-    <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
+    <div class="footer-inner">
+      <div class="footer-brand">Lindberg<span>Teknologi</span></div>
+      <div class="footer-links">
+        <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="portfolio.html">Prosjekter</a>
+        <a href="ai.html">AI</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Lindberg Teknologi. Alle rettigheter forbeholdt.</p>
+    </div>
   </footer>
 
-  <!-- ========== Script ========== -->
   <script src="js/scrollFade.js"></script>
 </body>
 </html>
-

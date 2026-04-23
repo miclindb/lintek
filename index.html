@@ -7,29 +7,33 @@
   <meta property="og:title" content="Lindberg Teknologi | Hjem">
   <meta property="og:description" content="AI-løsninger for fremtidens virksomheter — fra strategi til implementering.">
   <meta property="og:image" content="images/prosjekt1.png">
-  <meta name="theme-color" content="#1a73e8">
+  <meta name="theme-color" content="#0f172a">
   <title>Lindberg Teknologi | Hjem</title>
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <!-- Navbar -->
   <nav class="navbar">
-    <a href="index.html">Hjem</a>
-    <a href="portfolio.html">Prosjekter</a>
-    <a href="ai.html">AI</a>
-    <a href="mailto:kontakt@lintek.no">Kontakt</a>
-  </nav>  
+    <div class="navbar-inner">
+      <a href="index.html" class="navbar-brand">Lindberg<span>Teknologi</span></a>
+      <div class="navbar-links">
+        <a href="index.html" aria-current="page">Hjem</a>
+        <a href="portfolio.html">Prosjekter</a>
+        <a href="ai.html">AI</a>
+        <a href="mailto:kontakt@lintek.no" class="nav-cta">Kontakt</a>
+      </div>
+    </div>
+  </nav>
 
   <!-- Hero -->
   <section class="hero fade-in">
-    <h1>Lindberg Teknologi</h1>
-    <p class="tagline">AI-løsninger for fremtidens virksomheter</p>
-    <p class="intro">
-      Vi hjelper bedrifter med kunstig intelligens og maskinlæring – 
+    <h1>AI-rådgivning for<br><span class="highlight">fremtidens virksomheter</span></h1>
+    <p class="tagline">
+      Vi hjelper bedrifter med kunstig intelligens og maskinlæring —
       fra strategi til implementering. Smartere løsninger, bedre beslutninger.
     </p>
     <div class="cta-buttons">
@@ -38,50 +42,95 @@
     </div>
   </section>
 
+  <!-- Stats bar -->
+  <div class="stats-bar fade-in">
+    <div class="stats-bar-inner">
+      <div class="stat-item"><strong>5+</strong><span>År med erfaring</span></div>
+      <div class="stat-item"><strong>20+</strong><span>Prosjekter levert</span></div>
+      <div class="stat-item"><strong>100%</strong><span>Fornøyde kunder</span></div>
+      <div class="stat-item"><strong>3</strong><span>Spesialområder</span></div>
+    </div>
+  </div>
+
   <!-- Services -->
-  <section class="services fade-in">
-    <h2>Hva vi gjør</h2>
+  <section class="services section fade-in">
+    <div class="section-header">
+      <span class="eyebrow">Hva vi gjør</span>
+      <h2>Tjenester</h2>
+      <p>Vi dekker hele verdikjeden — fra strategi og dataanalyse til produksjon og vedlikehold av AI-løsninger.</p>
+    </div>
     <div class="service-grid">
-      <div class="service-card">🤖 <h3>AI-strategi</h3><p>Rådgivning og strategi for å ta i bruk AI på en lønnsom og trygg måte.</p></div>
-      <div class="service-card">📊 <h3>Dataanalyse</h3><p>Fra rådata til innsikt – vi bygger løsninger som gir deg bedre beslutningsgrunnlag.</p></div>
-      <div class="service-card">⚡ <h3>Automatisering</h3><p>Effektiviser prosesser med intelligente systemer og maskinlæring.</p></div>
-      <div class="service-card">💡 <h3>Maskinlæring</h3><p>Utvikling og implementering av modeller som lærer av dine data.</p></div>
+      <div class="service-card">
+        <span class="service-icon">🤖</span>
+        <h3>AI-strategi</h3>
+        <p>Rådgivning og strategi for å ta i bruk AI på en lønnsom og trygg måte.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">📊</span>
+        <h3>Dataanalyse</h3>
+        <p>Fra rådata til innsikt – vi bygger løsninger som gir deg bedre beslutningsgrunnlag.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">⚡</span>
+        <h3>Automatisering</h3>
+        <p>Effektiviser prosesser med intelligente systemer og maskinlæring.</p>
+      </div>
+      <div class="service-card">
+        <span class="service-icon">💡</span>
+        <h3>Maskinlæring</h3>
+        <p>Utvikling og implementering av modeller som lærer av dine data.</p>
+      </div>
     </div>
   </section>
 
   <!-- Featured Projects -->
-  <section class="featured-projects fade-in">
-    <h2>Utvalgte prosjekter</h2>
+  <section class="featured-projects section fade-in">
+    <div class="section-header">
+      <span class="eyebrow">Case-studier</span>
+      <h2>Utvalgte prosjekter</h2>
+      <p>Et utvalg av løsninger vi har bygget for kunder innen logistikk, finans og kundesupport.</p>
+    </div>
     <div class="projects-grid">
       <div class="project-card">
         <img src="images/prosjekt1.png" alt="AI-basert prediksjon" loading="lazy" decoding="async" width="1200" height="675">
-        <h3>AI-basert prediksjon</h3>
-        <p>Maskinlæringsmodell for å forutsi etterspørsel i logistikk.</p>
+        <div class="project-card-body">
+          <h3>AI-basert prediksjon</h3>
+          <p>Maskinlæringsmodell for å forutsi etterspørsel i logistikk.</p>
+        </div>
       </div>
       <div class="project-card">
         <img src="images/prosjekt2.png" alt="Automatisert analyse" loading="lazy" decoding="async" width="1200" height="675">
-        <h3>Automatisert analyse</h3>
-        <p>Løsning for automatisk dataanalyse og rapportgenerering.</p>
+        <div class="project-card-body">
+          <h3>Automatisert analyse</h3>
+          <p>Løsning for automatisk dataanalyse og rapportgenerering.</p>
+        </div>
       </div>
       <div class="project-card">
         <img src="images/prosjekt3.png" alt="Chatbot AI" loading="lazy" decoding="async" width="1200" height="675">
-        <h3>Chatbot AI</h3>
-        <p>Intelligent chatbot for kundesupport.</p>
+        <div class="project-card-body">
+          <h3>Chatbot AI</h3>
+          <p>Intelligent chatbot for kundesupport.</p>
+        </div>
       </div>
     </div>
     <div class="centered-cta">
-      <a href="portfolio.html" class="button primary">Se hele porteføljen</a>
+      <a href="portfolio.html" class="button outline">Se hele porteføljen →</a>
     </div>
   </section>
 
   <!-- Footer -->
   <footer class="fade-in">
-    <p>&copy; 2025 Lindberg Teknologi</p>
-    <p>
-      <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a> |
-      <a href="https://www.linkedin.com" target="_blank">LinkedIn</a> |
-      <a href="https://github.com" target="_blank">GitHub</a>
-    </p>
+    <div class="footer-inner">
+      <div class="footer-brand">Lindberg<span>Teknologi</span></div>
+      <div class="footer-links">
+        <a href="mailto:kontakt@lintek.no">kontakt@lintek.no</a>
+        <a href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com" target="_blank" rel="noopener">GitHub</a>
+        <a href="portfolio.html">Prosjekter</a>
+        <a href="ai.html">AI</a>
+      </div>
+      <p class="footer-copy">&copy; 2025 Lindberg Teknologi. Alle rettigheter forbeholdt.</p>
+    </div>
   </footer>
 
   <script src="js/scrollFade.js"></script>
